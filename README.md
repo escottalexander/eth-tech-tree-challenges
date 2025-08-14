@@ -73,14 +73,15 @@ Run the following to view your new address and balances across several networks.
 To fund your account with Sepolia ETH simply search for "Sepolia testnet faucet" on Google or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run `yarn account` again to verify the funds show in your Sepolia balance.
 
 ### Deploying your contract
-Once you have confirmed your balance on Sepolia you can run this command to deploy your contract.
+Note: Sepolia is used below as an example. However, multiple testnets are supported for submissions. See the up-to-date list of supported testnets in the [backend config](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21). Choose any from that list and replace `sepolia` in the commands with your chosen network name.
+Once you have confirmed your balance on your chosen supported testnet (Sepolia shown below) you can run this command to deploy your contract.
 ```bash
   yarn deploy --network sepolia
 ```
-Now you need to verify it on Sepolia Etherscan.
+Now you need to verify it on the block explorer for your chosen network (Sepolia Etherscan shown below).
 ```bash
   yarn verify --network sepolia
 ```
-Copy your deployed contract address from your console and paste it in at [sepolia.etherscan.io](https://sepolia.etherscan.io). You should see a green checkmark on the "Contract" tab showing that the source code has been verified.
+Copy your deployed contract address from your console and paste it into the explorer (for Sepolia: [sepolia.etherscan.io](https://sepolia.etherscan.io)). You should see a green checkmark on the "Contract" tab showing that the source code has been verified.
 
 Now you can return to the ETH Tech Tree CLI, navigate to this challenge in the tree and submit your deployed contract address. Congratulations!
