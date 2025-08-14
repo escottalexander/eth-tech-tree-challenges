@@ -105,6 +105,7 @@ Run the following to view your new address and balances across several networks.
 To fund your account with Sepolia ETH simply search for "Sepolia testnet faucet" on Google or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run `yarn account` again to verify the funds show in your Sepolia balance.
 
 ### Deploying your contract
+Note: We use Sepolia below as an example, but you can deploy to any of the supported testnets recognized by the ETH Tech Tree. See the [list of supported testnets](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21). Use the `--network <name>` flag accordingly.
 Once you have confirmed your balance on Sepolia you can run this command to deploy your contract.
 ```bash
   yarn deploy --network sepolia
