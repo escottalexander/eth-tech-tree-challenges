@@ -52,7 +52,7 @@ in a third terminal start the NextJS front end:
 ```
 
 ## Solved! (Final Steps)
-Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to the Sepolia testnet.
+Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to a supported testnet (for example, Sepolia).
 
 ### Setting up your wallet (if you haven't already)
 First you will need to generate an account. **You can skip this step if you have already created a keystore on your machine. Keystores are located in `~/.foundry/keystores`**
@@ -70,7 +70,7 @@ Run the following to view your new address and balances across several networks.
 ```bash
   yarn account
 ```
-To fund your account with Sepolia ETH simply search for "Sepolia testnet faucet" on Google or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run `yarn account` again to verify the funds show in your Sepolia balance.
+To fund your account with testnet ETH on your chosen network, search for a faucet (for example, "Sepolia testnet faucet" if using Sepolia) or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run `yarn account` again to verify the funds show in your balance for that network.
 
 ### Deploying your contract
 Note: Sepolia is used below as an example. However, multiple testnets are supported for submissions. See the up-to-date list of supported testnets in the [backend config](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21). Choose any from that list and replace `sepolia` in the commands with your chosen network name.
