@@ -64,7 +64,7 @@ in a third terminal start the NextJS front end:
 ```
 
 ## Solved! (Final Steps)
-Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to the Sepolia testnet.
+Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to a supported testnet (e.g., Sepolia). See the list of [supported testnets](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21).
 
 ### Setting up your wallet (if you haven't already)
 First you will need to generate an account. **You can skip this step if you have already created a keystore on your machine. Keystores are located in `~/.foundry/keystores`**
@@ -82,12 +82,12 @@ Run the following to view your new address and balances across several networks.
 ```bash
   yarn account
 ```
-To fund your account with Sepolia ETH simply search for "Sepolia testnet faucet" on Google or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run `yarn account` again to verify the funds show in your Sepolia balance.
+To fund your account on your chosen testnet (e.g., Sepolia), search for a testnet faucet or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run `yarn account` again to verify the funds show in your balance on that network.
 
 ### Deploying your contract
 Sepolia is used below as an example. The ETH Tech Tree supports multiple testnets; see the list of [supported testnets](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21). Replace `sepolia` with your chosen supported network in the commands.
 
-Once you have confirmed your balance on Sepolia you can run this command to deploy your contract.
+Once you have confirmed your balance on your chosen network you can run this command to deploy your contract.
 ```bash
   yarn deploy --network sepolia
 ```
