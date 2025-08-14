@@ -136,7 +136,7 @@ in a third terminal start the NextJS front end:
 \`\`\`
 
 ## Solved! (Final Steps)
-Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to the Sepolia testnet.
+Once you have a working solution and all the tests are passing, your next move is to deploy your contract to a supported testnet (Sepolia is shown below as an example). See the full list of [supported testnets](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21).
 
 ### Setting up your wallet (if you haven't already)
 First you will need to generate an account. **You can skip this step if you have already created a keystore on your machine. Keystores are located in \`~/.foundry/keystores\`**
@@ -166,7 +166,7 @@ Now you need to verify it on Sepolia Etherscan.
 \`\`\`bash
   yarn verify --network sepolia
 \`\`\`
-Copy your deployed contract address from your console and paste it in at [sepolia.etherscan.io](https://sepolia.etherscan.io). You should see a green checkmark on the "Contract" tab showing that the source code has been verified.
+Copy your deployed contract address from your console and paste it into the explorer for your testnet (e.g., [sepolia.etherscan.io](https://sepolia.etherscan.io)). You should see a green checkmark on the "Contract" tab showing that the source code has been verified.
 
 Now you can return to the ETH Tech Tree CLI, navigate to this challenge in the tree and submit your deployed contract address. Congratulations!
 `;
