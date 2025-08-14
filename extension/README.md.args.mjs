@@ -145,7 +145,7 @@ in a third terminal start the NextJS front end:
 \`\`\`
 
 ## Solved! (Final Steps)
-Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to the Sepolia testnet.
+Once you have a working solution and all the tests are passing your next move is to deploy your lovely contract to a supported testnet (Sepolia is used below as an example).
 
 ### Setting up your wallet (if you haven't already)
 First you will need to generate an account. **You can skip this step if you have already created a keystore on your machine. Keystores are located in \`~/.foundry/keystores\`**
@@ -163,20 +163,20 @@ Run the following to view your new address and balances across several networks.
 \`\`\`bash
   yarn account
 \`\`\`
-To fund your account with Sepolia ETH simply search for "Sepolia testnet faucet" on Google or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run \`yarn account\` again to verify the funds show in your Sepolia balance.
+To fund your account with testnet ETH (Sepolia shown here as an example) simply search for a faucet for your chosen network or ask around in onchain developer groups who are usually more than willing to share. Send the funds to your wallet address and run \`yarn account\` again to verify the funds show in your balance on that network.
 
 ### Deploying your contract
 Sepolia is used below as an example. You can deploy to any of the supported testnets; see the [list of supported testnets](https://github.com/BuidlGuidl/eth-tech-tree-backend/blob/12799cc95950ee3bd8d523b8d2d2e2f05f131268/packages/server/utils/config.ts#L21). Use the appropriate `--network` flag and corresponding block explorer for your chosen testnet.
 
-Once you have confirmed your balance on Sepolia you can run this command to deploy your contract.
+Once you have confirmed your balance on your chosen testnet (Sepolia in this example) you can run this command to deploy your contract.
 \`\`\`bash
   yarn deploy --network sepolia
 \`\`\`
-Now you need to verify it on Sepolia Etherscan.
+Now you need to verify it on the appropriate block explorer for your chosen testnet (example: Sepolia Etherscan).
 \`\`\`bash
   yarn verify --network sepolia
 \`\`\`
-Copy your deployed contract address from your console and paste it in at [sepolia.etherscan.io](https://sepolia.etherscan.io). You should see a green checkmark on the "Contract" tab showing that the source code has been verified.
+Copy your deployed contract address from your console and paste it into the explorer for your chosen testnet (example: [sepolia.etherscan.io](https://sepolia.etherscan.io)). You should see a green checkmark on the "Contract" tab showing that the source code has been verified.
 
 Now you can return to the ETH Tech Tree CLI, navigate to this challenge in the tree and submit your deployed contract address. Congratulations!
 `;
